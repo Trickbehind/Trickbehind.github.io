@@ -1,13 +1,122 @@
 <% include Partials/Header %>
+
 <div class="ui hidden divider "></div>
-<div class="ui fixed inverted massive menu">
+<div class="ui hidden divider "></div>
+<div class="ui hidden divider "></div>
+<div class="ui hidden divider "></div>
+<div class="ui hidden divider "></div>
+
+
+<div class="ui container">
+<form action="/comparison" method="POST">
+    <div class="ui left floated ">
+      <div class="ui fluid selection dropdown">
+
+        <input type="hidden" name="college1">
+        <i class="dropdown icon"></i>
+        <div class="default text">Select Friend</div>
+        <div class="menu">
+          <div class="item" data-value="IIIT-Hyderabad">
+            <img class="ui mini avatar image" src="/images/avatar/small/jenny.jpg">
+            IIIT-Hyderabad
+          </div>
+          <div class="item" data-value="IIIT-Allahabad">
+            <img class="ui mini avatar image" src="/images/avatar/small/elliot.jpg">
+            IIIT-Allahabad
+          </div>
+          <div class="item" data-value="stevie">
+            <img class="ui mini avatar image" src="/images/avatar/small/stevie.jpg">
+            IIIT-Sricity
+          </div>
+          <div class="item" data-value="christian">
+            <img class="ui mini avatar image" src="/images/avatar/small/christian.jpg">
+            MNNIT-Allahabad
+          </div>
+          <div class="item" data-value="matt">
+            <img class="ui mini avatar image" src="/images/avatar/small/matt.jpg">
+            NIT-Waranagal
+          </div>
+          <div class="item" data-value="justen">
+            <img class="ui mini avatar image" src="/images/avatar/small/justen.jpg">
+            NIT-Surathkal
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="ui hidden divider"></div>
+  <div class="ui left floated ">
+      <div class="ui fluid selection dropdown">
+      
+        <input type="hidden" name="college2">
+        <i class="dropdown icon"></i>
+        <div class="default text">Select Friend</div>
+        <div class="menu">
+          <div class="item" data-value="jenny">
+            <img class="ui mini avatar image" src="/images/avatar/small/jenny.jpg">
+            IIIT-Hyderabad
+          </div>
+          <div class="item" data-value="IIIT-Aallahabad">
+            <img class="ui mini avatar image" src="/images/avatar/small/elliot.jpg">
+            IIIT-Allahabad
+          </div>
+          <div class="item" data-value="stevie">
+            <img class="ui mini avatar image" src="/images/avatar/small/stevie.jpg">
+            IIIT-Sricity
+          </div>
+          <div class="item" data-value="christian">
+            <img class="ui mini avatar image" src="/images/avatar/small/christian.jpg">
+            MNNIT-Allahabad
+          </div>
+          <div class="item" data-value="matt">
+            <img class="ui mini avatar image" src="/images/avatar/small/matt.jpg">
+            NIT-Waranagal
+          </div>
+          <div class="item" data-value="justen">
+            <img class="ui mini avatar image" src="/images/avatar/small/justen.jpg">
+            NIT-Surathkal
+          </div>
+      </div>
+
+    </div>
+
+  </div>
+ 
+ <div class="ui hidden divider"></div>
+
+   <div class="ui right aligned grid">
+  
+  <div class="center aligned two column row">
+    <div class="column">
+
+      <button class="ui basic  black button">Proceed</button>
+      
+    </div>
+    
+  </div>
+  
+</div>
+
+  </form>
+
+</div>
+
+
+
+
+<div class="ui hidden divider "></div>
+
+<div class="ui fixed inverted huge massive pointing menu">
     <div class="ui container">
       <a href="#" class="header item">
-        <img class="logo" src="assets/images/logo.png">
-        Project Name
+        <img class="logo" src="/img/header-bg.jpg">
       </a>
+
       <a href="#" class="item">Home</a>
-      <div class="ui simple dropdown item">
+      <a href="#" class="item">College Finder</a>
+      <a href="#" class="item">Ranking</a>
+
+
+      <div class="ui simple dropdown item float right">
         Dropdown <i class="dropdown icon"></i>
         <div class="menu">
           <a class="item" href="#">Link Item</a>
@@ -22,9 +131,11 @@
               <a class="item" href="#">Link Item</a>
             </div>
           </div>
-          <a class="item" href="#">Link Item</a>
+          <a class="item" href="#">Link Item</a>s
         </div>
       </div>
+
+      <a href="" class="item">login</a>
     </div>
   </div>
 
@@ -43,28 +154,28 @@
       </thead>
       <tbody>
         <tr>
-          <td>IIIT-Hyderabad</td>
-          <td>IIIT-Allahabad</td>
+          <td><%=l1[0].name %></td>
+          <td><%=l2[0].name %></td>
           <td> Greater </td>
         </tr>
         <tr>
-          <td>Reidencial</td>
-          <td>Reidencial</td>
+          <td><%=l1[0].rank %></td>
+          <td><%=l2[0].rank %></td>
           <td> Equal </td>
         </tr>
         <tr>
-          <td>Intake: 200+</td>
-          <td>Intake: 300+</td>
+          <td><%=l1[0].place %></td>
+          <td><%=l2[0].place %></td>
           <td>Lesser</td>
         </tr>
         <tr>
-          <td>Median Salary: 18LPA</td>
-          <td>Median Salary: 16LPA</td>
+          <td><%=l1[0].salary %></td>
+          <td><%=l2[0].salary %></td>
           <td>Greater</td>
         </tr>
         <tr>
-          <td>Ranking: 11th</td>
-          <td>Ranking: 14th</td>
+          <td><%=l1[0].intake %></td>
+          <td><%=l2[0].intake %></td>
           <td>Greater</td>
         </tr>
       </tbody>
@@ -78,8 +189,21 @@
   </div>
 </div>
 
+<div class="ui hidden divider"></div>
 
-</div>
+<!-- </div>
  <div class="ui hidden divider"></div>
   <div class="ui hidden divider"></div>
+<div class="ui info message">  transition hidden 
+  <div class="ui warning success message">
+  <i class="close icon"></i>
+  <div class="header">
+    Your user registration was successful.
+  </div>
+  <p>You may now log-in with the username you have chosen</p>
+</div>
+</div> -->
+
+<script src="static/dist/semantic-ui/semantic.min.js"></script>
+<script type="text/javascript" src="js/TempHome.js"></script>
 <% include Partials/Footer %>

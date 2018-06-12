@@ -8,95 +8,97 @@
 
 
 <div class="ui container">
-<form action="/comparison" method="POST">
+  <div class="ui piled red segment">
+  <form action="/comparison" method="POST">
+      <div class="ui left floated ">
+        <div class="ui fluid selection dropdown">
+
+          <input type="hidden" name="college1">
+          <i class="dropdown icon"></i>
+          <div class="default text">Select Friend</div>
+          <div class="menu">
+            <div class="item" data-value="IIIT-Hyderabad">
+              <img class="ui mini avatar image" src="/images/avatar/small/jenny.jpg">
+              IIIT-Hyderabad
+            </div>
+            <div class="item" data-value="IIIT-Aallahabad">
+              <img class="ui mini avatar image" src="/images/avatar/small/elliot.jpg">
+              IIIT-Allahabad
+            </div>
+            <div class="item" data-value="stevie">
+              <img class="ui mini avatar image" src="/images/avatar/small/stevie.jpg">
+              IIIT-Sricity
+            </div>
+            <div class="item" data-value="christian">
+              <img class="ui mini avatar image" src="/images/avatar/small/christian.jpg">
+              MNNIT-Allahabad
+            </div>
+            <div class="item" data-value="matt">
+              <img class="ui mini avatar image" src="/images/avatar/small/matt.jpg">
+              NIT-Waranagal
+            </div>
+            <div class="item" data-value="justen">
+              <img class="ui mini avatar image" src="/images/avatar/small/justen.jpg">
+              NIT-Surathkal
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="ui hidden divider"></div>
     <div class="ui left floated ">
-      <div class="ui fluid selection dropdown">
+        <div class="ui fluid selection dropdown">
+        
+          <input type="hidden" name="college2">
+          <i class="dropdown icon"></i>
+          <div class="default text">Select Friend</div>
+          <div class="menu">
+            <div class="item" data-value="IIIT-Hyderabad">
+              <img class="ui mini avatar image" src="/images/avatar/small/jenny.jpg">
+              IIIT-Hyderabad
+            </div>
+            <div class="item" data-value="IIIT-Aallahabad">
+              <img class="ui mini avatar image" src="/images/avatar/small/elliot.jpg">
+              IIIT-Allahabad
+            </div>
+            <div class="item" data-value="stevie">
+              <img class="ui mini avatar image" src="/images/avatar/small/stevie.jpg">
+              IIIT-Sricity
+            </div>
+            <div class="item" data-value="christian">
+              <img class="ui mini avatar image" src="/images/avatar/small/christian.jpg">
+              MNNIT-Allahabad
+            </div>
+            <div class="item" data-value="matt">
+              <img class="ui mini avatar image" src="/images/avatar/small/matt.jpg">
+              NIT-Waranagal
+            </div>
+            <div class="item" data-value="justen">
+              <img class="ui mini avatar image" src="/images/avatar/small/justen.jpg">
+              NIT-Surathkal
+            </div>
+        </div>
 
-        <input type="hidden" name="college1">
-        <i class="dropdown icon"></i>
-        <div class="default text">Select Friend</div>
-        <div class="menu">
-          <div class="item" data-value="IIIT-Hyderabad">
-            <img class="ui mini avatar image" src="/images/avatar/small/jenny.jpg">
-            IIIT-Hyderabad
-          </div>
-          <div class="item" data-value="IIIT-Allahabad">
-            <img class="ui mini avatar image" src="/images/avatar/small/elliot.jpg">
-            IIIT-Allahabad
-          </div>
-          <div class="item" data-value="stevie">
-            <img class="ui mini avatar image" src="/images/avatar/small/stevie.jpg">
-            IIIT-Sricity
-          </div>
-          <div class="item" data-value="christian">
-            <img class="ui mini avatar image" src="/images/avatar/small/christian.jpg">
-            MNNIT-Allahabad
-          </div>
-          <div class="item" data-value="matt">
-            <img class="ui mini avatar image" src="/images/avatar/small/matt.jpg">
-            NIT-Waranagal
-          </div>
-          <div class="item" data-value="justen">
-            <img class="ui mini avatar image" src="/images/avatar/small/justen.jpg">
-            NIT-Surathkal
-          </div>
-      </div>
-    </div>
-  </div>
-  <div class="ui hidden divider"></div>
-  <div class="ui left floated ">
-      <div class="ui fluid selection dropdown">
-      
-        <input type="hidden" name="college2">
-        <i class="dropdown icon"></i>
-        <div class="default text">Select Friend</div>
-        <div class="menu">
-          <div class="item" data-value="jenny">
-            <img class="ui mini avatar image" src="/images/avatar/small/jenny.jpg">
-            IIIT-Hyderabad
-          </div>
-          <div class="item" data-value="IIIT-Aallahabad">
-            <img class="ui mini avatar image" src="/images/avatar/small/elliot.jpg">
-            IIIT-Allahabad
-          </div>
-          <div class="item" data-value="stevie">
-            <img class="ui mini avatar image" src="/images/avatar/small/stevie.jpg">
-            IIIT-Sricity
-          </div>
-          <div class="item" data-value="christian">
-            <img class="ui mini avatar image" src="/images/avatar/small/christian.jpg">
-            MNNIT-Allahabad
-          </div>
-          <div class="item" data-value="matt">
-            <img class="ui mini avatar image" src="/images/avatar/small/matt.jpg">
-            NIT-Waranagal
-          </div>
-          <div class="item" data-value="justen">
-            <img class="ui mini avatar image" src="/images/avatar/small/justen.jpg">
-            NIT-Surathkal
-          </div>
       </div>
 
     </div>
+   
+   <div class="ui hidden divider"></div>
 
-  </div>
- 
- <div class="ui hidden divider"></div>
+     <div class="ui right aligned grid">
+    
+    <div class="center aligned two column row">
+      <div class="column">
 
-   <div class="ui right aligned grid">
-  
-  <div class="center aligned two column row">
-    <div class="column">
-
-      <button class="ui basic  black button">Proceed</button>
+        <button class="ui basic  black button hello">Proceed</button>
+        
+      </div>
       
     </div>
     
   </div>
-  
-</div>
 
-  </form>
+    </form>
+  </div>
 
 </div>
 
@@ -111,8 +113,8 @@
         <img class="logo" src="/img/header-bg.jpg">
       </a>
 
-      <a href="#" class="item">Home</a>
-      <a href="#" class="item">College Finder</a>
+      <a href="Home" class="item">Home</a>
+      <a href="comparison" class="item">College Finder</a>
       <a href="#" class="item">Ranking</a>
 
 
@@ -191,18 +193,134 @@
 
 <div class="ui hidden divider"></div>
 
-<!-- </div>
- <div class="ui hidden divider"></div>
-  <div class="ui hidden divider"></div>
-<div class="ui info message">  transition hidden 
-  <div class="ui warning success message">
-  <i class="close icon"></i>
-  <div class="header">
-    Your user registration was successful.
+
+<div class="ui container">
+  <div class="ui message positive">
+    <i class="close icon"></i>
+    
+    <div class="ui">
+    IIIT-Hyderabad
+      <div class="ui red inverted circular progress" data-percent="40">
+
+        <div class="circular bar verticle" style="transition-duration: 300ms; width: 19%;">
+          <div class="progress"> 19%</div>
+        </div>
+      </div>
+      IIIT-Allahabad
+      <div class="ui orange inverted progress" data-percent="40">
+        <div class="bar" style="transition-duration: 300ms; width: 40%;">
+          <div class="progress">40%</div>
+        </div>
+      </div>
+     
+    </div>
   </div>
-  <p>You may now log-in with the username you have chosen</p>
 </div>
-</div> -->
+
+
+<div class="ui hidden divider"></div>
+
+<div class="ui container">
+  <div class="ui threaded comments">
+  <h3 class="ui dividing header">Comments</h3>
+  <div class="comment">
+    <a class="avatar">
+      <img src="/images/avatar/small/matt.jpg">
+    </a>
+    <div class="content">
+      <a class="author">Matt</a>
+      <div class="metadata">
+        <span class="date">Today at 5:42PM</span>
+      </div>
+      <div class="text">
+        How artistic!
+      </div>
+      <div class="actions">
+        <a class="reply">Reply</a>
+      </div>
+    </div>
+  </div>
+  <div class="comment">
+    <a class="avatar">
+      <img src="/images/avatar/small/elliot.jpg">
+    </a>
+    <div class="content">
+      <a class="author">Elliot Fu</a>
+      <div class="metadata">
+        <span class="date">Yesterday at 12:30AM</span>
+      </div>
+      <div class="text">
+        <p>This has been very useful for my research. Thanks as well!</p>
+      </div>
+      <div class="actions">
+        <a class="reply">Reply</a>
+      </div>
+    </div>
+    <div class="comments">
+      <div class="comment">
+        <a class="avatar">
+          <img src="/images/avatar/small/jenny.jpg">
+        </a>
+        <div class="content">
+          <a class="author">Jenny Hess</a>
+          <div class="metadata">
+            <span class="date">Just now</span>
+          </div>
+          <div class="text">
+            Elliot you are always so right :)
+          </div>
+          <div class="actions">
+            <a class="reply">Reply</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="comment">
+    <a class="avatar">
+      <img src="/images/avatar/small/joe.jpg">
+    </a>
+    <div class="content">
+      <a class="author">Joe Henderson</a>
+      <div class="metadata">
+        <span class="date">5 days ago</span>
+      </div>
+      <div class="text">
+        Dude, this is awesome. Thanks so much
+      </div>
+      <div class="actions">
+        <a class="reply">Reply</a>
+      </div>
+    </div>
+  </div>
+  <form class="ui reply form">
+    <div class="field">
+      <textarea></textarea>
+    </div>
+    <div class="ui blue labeled submit icon button">
+      <i class="icon edit"></i> Add Reply
+    </div>
+  </form>
+</div>
+</div>
+<script type="text/javascript">
+  $('.message .close')
+  .on('click', function() {
+    $(this)
+      .closest('.message')
+      .transition('fade out')
+    ;
+  })
+;
+$('.hello ')
+  .on('click', function() {
+    $(this)
+      .closest('.message')
+      .transition('fade in')
+    ;
+  })
+;
+</script>
 
 <script src="static/dist/semantic-ui/semantic.min.js"></script>
 <script type="text/javascript" src="js/TempHome.js"></script>

@@ -11,7 +11,7 @@ var connection = mysql.createConnection({
 	database: 'Version2'
 });
 
-var l1 = [{name: "xxxx"}], l2 = [{name: "xxxx"}];
+var l1 = [{name: "", rank: "", intake: "", salary: ""}], l2 = [{name: "", rank: "", intake: "", salary: ""}];
 connection.connect (function (error){
 	if (error){
 		console.log ("Error in Database");
@@ -31,8 +31,9 @@ app.get ("/", function (req, res){
 	res.render ("Home");
 });
 
-app.get ("/TempHome", function(req, res){
-	res.render ("TempHome");
+
+app.get ("/home", function(req, res){
+	res.render ("Home");
 });
 
 app.get ("/Sign", function(req, res){

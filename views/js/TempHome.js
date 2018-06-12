@@ -69,3 +69,10 @@
     // by default, slide every 10 seconds
     setInterval(leftMove, 10000);
   });
+
+
+function list (){
+  $('.ui.basic.modal')
+  .modal('show')
+;
+}
